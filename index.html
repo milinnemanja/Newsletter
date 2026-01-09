@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newsletter Landing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="hero" role="main" aria-label="Newsletter signup hero">
+    <div class="overlay"></div>
+
+    <section class="content">
+      <div class="card">
+        <div class="left">
+          <div class="avatar" aria-hidden="true">
+            <img src="/Images/avatar-image.png" alt="" />
+          </div>
+
+          <h1>Subscribe to our<br />newsletter</h1>
+
+          <p>
+            Subscribe to our newsletter and stay up to date with our latest products, 
+            special offers, and project updates. Be the first to receive exclusive news, 
+            inspiration, and important announcements directly in your inbox.
+          </p>
+        </div>
+
+<form class="form" id="subscribeForm" novalidate>
+  <label class="sr-only" for="email">Email Address</label>
+  <input id="email" name="email" type="email" placeholder="Email Address" required />
+
+  <button type="submit">SUBSCRIBE</button>
+
+  <small class="fineprint">
+    We respect your privacy. Unsubscribe at any time.
+  </small>
+</form>
+      </div>
+
+      <div class="thankyou-backdrop" id="thankyouBackdrop" aria-hidden="true">
+  <div class="thankyou-modal" role="dialog" aria-modal="true">
+    <h2>Thank you for subscribing</h2>
+    <p>You’ve been successfully added to our mailing list.</p>
+    <button id="closeThankyou">OK</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+    </section>
+  </main>
+</body>
+</html>
